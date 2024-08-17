@@ -7,6 +7,8 @@ import (
 	"github.com/gofrs/uuid"
 )
 
+// NOTE - I HAVE MODIFIED THE MAIN FUNCTION TO ACCOMODATE A FUNCTION SERVICE ACCOUNT TO ASSIST IN MOCKS FOR UNIT TESTING
+
 type Service struct{}
 
 func (s *Service) FetchAllFoldersByOrgID(orgID uuid.UUID) ([]*folders.Folder, error) {
